@@ -16,15 +16,9 @@
 
 9)sudo chown apache:apache /var/www/html/index.php
 
-10)access website using 
+10)Connect RDS database to mysql workbench using RDS enpoint URL and create testdb database using following sql queries.
+
+11)access website using 
 
   http://<EC2-Public-IP>/index.php
 
-11)CREATE DATABASE testdb;
-USE testdb;
-
-CREATE TABLE users (
-  id INT AUTO_INCREMENT PRIMARY KEY,
-  name VARCHAR(100),
-  email VARCHAR(100)
-);
